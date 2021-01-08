@@ -1,0 +1,96 @@
+*
+{
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+    position: relative;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Consolas';
+}
+header
+{
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+hr
+{
+    width: 85%;
+    border: .5px solid black;
+
+}
+
+#center
+{
+    font-family:Georgia, serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+#small
+{
+    display: flex;
+    margin: auto;
+    width: 100vw;
+    padding: 0;
+}
+#briefMe span
+{
+    display: flex;
+    margin: auto;
+    width: 90vw;
+    padding: 10px;
+    font-size: 1.15rem;
+    top: 200px;
+    justify-content: center;
+    overflow: hidden;
+}
+.Page a
+{
+    display: flex;
+    position: absolute;
+    top: 350px;
+    left: 80%;
+    font-size: 1.5rem;
+}
+
+
+/*Media Queries for 768px and 600px */
+
+@media only screen and (min-width: 600px) /* Potrait Tablets and Phones*/
+{
+    header
+    {
+        font-size: 3rem;
+    }
+    hr
+    {
+        width: 30%;
+    }
+}
+@media only screen and (min-width: 768px) /*Landscape Tablets and Phones */
+{
+    header
+    {
+        font-size: 3rem;
+    }
+    hr
+    {
+        width: 30%;
+    }
+    #briefMe span
+    {
+        width: 55vw;
+        font-size: 2.5rem;
+        justify-content: stretch;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 992px) /* Laptops and desktops*/
+
+@media only screen and (min-width: 1200px) /* Large Laptops and Desktops*/

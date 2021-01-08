@@ -1,0 +1,131 @@
+*
+{
+    padding: 0;
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+    position: relative;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Consolas';
+}
+
+:root
+{
+    --primary: #3dcfd3;
+    --dark: #333333;
+    --ternary: #898989;
+    --pure: #ffffff;
+    --light: #f2f2f2;
+    --secondary: #070606;
+
+}
+
+section
+{
+    padding: 6rem 0;
+    background-color: var(--light);
+}
+
+.boxContainer
+{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.card-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+.card
+{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all .3s ease;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(255, 0, 0, 0.12),
+                0 2px 2px rgba(0, 255, 0, 0.12),
+                0 4px 4px rgba(0, 0, 255, 0.12),
+                0 8px 8px rgba(0, 138, 0, 0.12),
+                0 16px 16px rgba(224, 115, 115, 0.12);
+}
+
+.icons
+{
+    width: 80px;
+    height: 80px;
+    background: var(--primary);
+    color: var(--dark);
+    font-size: 2rem;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 15px;
+}
+
+.card span
+{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    background: inherit;
+}
+
+.card p
+{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.4;
+    width: fit-content;
+    background: inherit;
+}
+
+.card:hover
+{
+    background: var(--dark);
+}
+
+.card:hover span, .card:hover p
+{
+    background: inherit;
+    color: #ffffff;
+}
+
+/* copied media queries from instagram > @saimanasim5 */
+@media only screen and (min-width: 768px)
+{
+    .card-wrapper
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .boxcontainer
+    {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 568px)
+{
+    .card-wrapper
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .boxcontainer
+    {
+        max-width: 540px;
+    }
+}
